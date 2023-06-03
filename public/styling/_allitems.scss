@@ -1,0 +1,47 @@
+@import 'variables';
+
+.allitems {
+    width: max-content;
+    height: auto;
+
+    .navbar {
+        z-index: 1000;
+        height: 40px;
+        width: 100%;
+        background-color: black;
+        color: $white;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: $mediumFontSize;
+        font-family: 'Agency FB';
+        font-weight: bold;
+
+        .links {
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            font-size: $smallFontSize;
+            font-family: $mainFontFamily;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                cursor: pointer;
+                margin: 10px;
+                transition: 0.5s;
+
+
+                &:hover {
+                    color: $primaryColor;
+                    transform: scale(1.2);
+
+                }
+            }
+        }
+    }
+}
