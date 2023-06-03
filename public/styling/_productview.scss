@@ -1,0 +1,194 @@
+@import 'variables';
+
+.productview {
+    display: flex;
+    flex-direction: column;
+
+    .navbar {
+        height: 40px;
+        background-color: black;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: $mediumFontSize;
+        font-family: 'Agency FB';
+        font-weight: bold;
+
+        .links {
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            font-size: $smallFontSize;
+            font-family: $mainFontFamily;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                cursor: pointer;
+                margin: 10px;
+                transition: 0.5s;
+
+
+                &:hover {
+                    color: $primaryColor;
+                    transform: scale(1.2);
+
+                }
+            }
+        }
+    }
+
+    .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .item-name {
+            font-size: $largeFontSize;
+            font-family: $mainFontFamily;
+            margin: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .left {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .image {
+                margin: 10px;
+                height: 400px;
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll;
+
+                img {
+                    width: 50%;
+                    height: 95%;
+                    border-radius: 10px;
+                    margin-left: 10px;
+                }
+            }
+
+            ::-webkit-scrollbar {
+                height: 5px !important;
+                background-color: $lightGrey;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: $darkGrey !important;
+            }
+
+            .addToCart {
+                cursor: pointer;
+                align-self: flex-end;
+                color: $white;
+                font-family: $mainFontFamily;
+                background-color: $primaryColor;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+
+                &:hover {
+                    @include hoverAnim;
+                }
+
+            }
+
+            .description {
+                margin: 10px;
+                padding: 10px;
+                background-color: $white;
+                border-radius: 10px;
+                border: 1px solid $lightGrey;
+
+                h1 {
+                    font-size: $largeFontSize;
+                    font-family: $mainFontFamily;
+                }
+
+                .grid {
+                    height: 100%;
+                    width: 40%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    h2 {
+                        font-family: $mainFontFamily;
+                        font-size: $smallFontSize;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-family: $mainFontFamily;
+                font-size: $largeFontSize;
+                color: $darkGrey;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .row {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+
+                .item {
+                    height: 100px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: $white;
+                    border-radius: 10px;
+
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
+
+                    .column {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        text-align: start;
+
+                        h3 {
+                            width: fit-content;
+                            margin: 0;
+                            font-size: $mediumFontSize;
+                            color: black;
+                            font-family: $mainFontFamily;
+
+                            &.price {
+                                color: $darkGrey;
+                                font-size: $smallFontSize;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: transparent;
+            }
+        }
+    }
+}

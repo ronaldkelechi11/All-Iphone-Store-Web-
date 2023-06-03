@@ -1,0 +1,29 @@
+@import 'variables';
+
+.addItem {
+    height: 100vh;
+    display: flex;
+    padding: 10px;
+
+    .row {
+        @include flex-row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+
+        .item {
+            @include flex-column;
+            background-color: green;
+            width: 30%;
+            height: 100%;
+            padding: 10px;
+
+            img {
+                width: 100%;
+                height: 80%;
+            }
+
+            input[type="file"] {}
+        }
+    }
+}

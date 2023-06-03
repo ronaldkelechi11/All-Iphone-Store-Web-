@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- Linking Section -->
+    <link rel="stylesheet" href="/public/styling/Index.css">
+    <script type="module" src="/public/scripts/signup.js"></script>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="navbar" id="navbar">
+            X
+        </div>
+        <div class="flex">
+            <div class="left">
+                <div class="message" id="message">
+                    User already exists with that Email
+                    <div class="x">x</div>
+                </div>
+                <h1>Sign Up</h1>
+                <h4>Please Sign Up to enjoy using our services to the fullest</h4>
+
+                <form id="form" method="post" autocomplete="on">
+                    <input type="text" name="name" id="name" placeholder="Full Name" minlength="2" maxlength="64"
+                        required>
+                    <input type="email" name="email" id="email" placeholder="Email" minlength="2" maxlength="64"
+                        required>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Telephone" minlength="2"
+                        maxlength="20" required>
+                    <input type="text" name="address" id="address" placeholder="Home Address" minlength="2"
+                        maxlength="64" required>
+                    <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Date of Birth (2004-09-07)"
+                        minlength="2" maxlength="64" required>
+                    <input type="password" name="password" id="password" placeholder="Password" minlength="8"
+                        maxlength="64" required>
+                    <input type="submit" value="Sign Up" id="submit_button">
+                </form>
+                <p id="goToLogin">Already have an account? <span>Login Here</span></p>
+
+
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

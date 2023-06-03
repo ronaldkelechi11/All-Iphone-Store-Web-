@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/public/styling/Index.css">
+    <script type="module" src="/public/scripts/login.js"></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="navbar" id="navbar">
+            X
+        </div>
+        <div class="flex">
+            <div class="left">
+                <div class="message" id="message">
+                    User not found. Please check Email and Password and try again
+                    <div class="x">x</div>
+                </div>
+                <h1>Login</h1>
+                <h4>Login to access our services on this device</h4>
+
+                <form method="post" id="form">
+                    <input type="email" name="email" id="email" placeholder="Email" required min="2" max="64">
+                    <input type="password" name="password" id="password" placeholder="Password" required min="8"
+                        max="64">
+                    <input type="submit" value="Sign Up" id="submit_button">
+                </form>
+                <p id="goToSignup">Don't have an account? <span>Register Here</span></p>
+
+
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

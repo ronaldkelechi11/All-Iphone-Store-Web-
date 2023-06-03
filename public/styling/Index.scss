@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'home';
+@import 'signup';
+@import 'productview';
+@import 'login';
+@import 'additem';
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
