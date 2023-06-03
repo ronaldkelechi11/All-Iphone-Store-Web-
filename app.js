@@ -15,6 +15,7 @@ const signuproute = require("./routes/signuproute")
 const productviewroute = require("./routes/productviewroute")
 const loginroute = require('./routes/loginroute')
 const addItemRoute = require("./routes/additemroutes")
+const allItemRoute = require("./routes/allitemroutes")
 
 
 //Routes Assigning
@@ -22,6 +23,7 @@ app.use("/home", homeroute)
 app.use("/signup", signuproute)
 app.use("/login", loginroute)
 app.use("/productview", productviewroute)
+app.use("/allitem", allItemRoute)
 app.use("/admin/additem", addItemRoute)
 
 app.get("/", (req, res) => {

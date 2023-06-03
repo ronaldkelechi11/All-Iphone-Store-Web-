@@ -4,7 +4,7 @@ const Item = require("../providers/item")
 
 router.get("/", (req, res) => {
     console.log("Connected");
-    res.sendFile(__dirname.replace("routes", "") + "/public/views/All Item.html")
+    res.sendFile(__dirname.replace("routes", "") + "/public/views/All Items.html")
 })
 
 router.post("/", (req, res) => {

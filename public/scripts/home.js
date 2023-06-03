@@ -22,6 +22,10 @@ function run() {
             window.location = "/productview/" + itemName
         })
     }
+
+    document.getElementById("seemore").addEventListener("click", () => {
+        window.location = "/allitem"
+    })
 }
 
 run()
