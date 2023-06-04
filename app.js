@@ -24,7 +24,7 @@ app.use("/signup", signuproute)
 app.use("/login", loginroute)
 app.use("/productview", productviewroute)
 app.use("/allitem", allItemRoute)
-app.use("/admin/additem", addItemRoute)
+app.use("/admin", addItemRoute)
 
 app.get("/", (req, res) => {
     res.redirect("/home")

@@ -63,14 +63,14 @@
 
             .image {
                 margin: 10px;
-                height: 400px;
+                height: 300px;
                 display: flex;
                 flex-direction: row;
                 overflow-x: scroll;
 
                 img {
-                    width: 50%;
-                    height: 95%;
+                    width: 35%;
+                    height: 90%;
                     border-radius: 10px;
                     margin-left: 10px;
                 }
@@ -108,6 +108,12 @@
                 background-color: $white;
                 border-radius: 10px;
                 border: 1px solid $lightGrey;
+
+                hr {
+                    background-color: black;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
 
                 h1 {
                     font-size: $largeFontSize;
@@ -149,41 +155,6 @@
                 flex-direction: column;
                 overflow-y: scroll;
 
-                .item {
-                    height: 100px;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    background-color: $white;
-                    border-radius: 10px;
-
-                    img {
-                        width: 90px;
-                        height: 90px;
-                    }
-
-                    .column {
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        text-align: start;
-
-                        h3 {
-                            width: fit-content;
-                            margin: 0;
-                            font-size: $mediumFontSize;
-                            color: black;
-                            font-family: $mainFontFamily;
-
-                            &.price {
-                                color: $darkGrey;
-                                font-size: $smallFontSize;
-                            }
-                        }
-                    }
-                }
             }
 
             ::-webkit-scrollbar-thumb {

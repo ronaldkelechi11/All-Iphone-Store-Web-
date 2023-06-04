@@ -9,21 +9,29 @@
         @include flex-row;
         justify-content: space-evenly;
         width: 100%;
-        height: 300px;
+        height: 250px;
 
         .item {
             @include flex-column;
-            background-color: green;
-            width: 30%;
+            justify-content: space-evenly;
+            border: 1px solid $darkGrey;
+            width: 20%;
             height: 100%;
             padding: 10px;
 
-            img {
-                width: 100%;
-                height: 80%;
+            h2 {
+                color: black;
+                font-family: $mainFontFamily;
+                font-size: $mainFontFamily;
+                align-self: center;
             }
 
-            input[type="file"] {}
+            img {
+                width: 60%;
+                height: 60%;
+                align-self: center;
+            }
+
         }
     }
 }

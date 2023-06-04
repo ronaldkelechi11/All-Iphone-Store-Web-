@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
 @keyframes heartbeat {
   0% {
     transform: scale(1);
@@ -530,14 +544,14 @@
 }
 .productview .center .left .image {
   margin: 10px;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
 }
 .productview .center .left .image img {
-  width: 50%;
-  height: 95%;
+  width: 35%;
+  height: 90%;
   border-radius: 10px;
   margin-left: 10px;
 }
@@ -570,6 +584,11 @@
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
+}
+.productview .center .left .description hr {
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .productview .center .left .description h1 {
   font-size: 32px;
@@ -604,38 +623,6 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-}
-.productview .center .right .row .item {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.productview .center .right .row .item img {
-  width: 90px;
-  height: 90px;
-}
-.productview .center .right .row .item .column {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: start;
-}
-.productview .center .right .row .item .column h3 {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0;
-  font-size: 28px;
-  color: black;
-  font-family: "Calibri";
-}
-.productview .center .right .row .item .column h3.price {
-  color: #7c7c7c;
-  font-size: 16px;
 }
 .productview .center .right ::-webkit-scrollbar-thumb {
   background-color: transparent;
@@ -809,20 +796,29 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 .addItem .row .item {
   display: flex;
   flex-direction: column;
-  background-color: green;
-  width: 30%;
+  justify-content: space-evenly;
+  border: 1px solid #7c7c7c;
+  width: 20%;
   height: 100%;
   padding: 10px;
 }
-.addItem .row .item img {
-  width: 100%;
-  height: 80%;
+.addItem .row .item h2 {
+  color: black;
+  font-family: "Calibri";
+  font-size: "Calibri";
+  align-self: center;
 }
+.addItem .row .item img {
+  width: 60%;
+  height: 60%;
+  align-self: center;
+}
+
 @keyframes heartbeat {
   0% {
     transform: scale(1);
