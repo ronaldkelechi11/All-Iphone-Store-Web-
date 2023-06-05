@@ -2,12 +2,12 @@
 
 .addItem {
     height: 100vh;
-    display: flex;
     padding: 10px;
+    @include flex-column;
 
     .row {
         @include flex-row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
         height: 250px;
 
@@ -16,7 +16,7 @@
             justify-content: space-evenly;
             border: 1px solid $darkGrey;
             width: 20%;
-            height: 100%;
+            height: 200px;
             padding: 10px;
 
             h2 {
@@ -32,6 +32,24 @@
                 align-self: center;
             }
 
+        }
+    }
+
+    form {
+        margin-top: 10px;
+        @include flex-column;
+        gap: 20px;
+
+        input {
+            padding: 10px;
+            height: 40px;
+            border: 1px solid $primaryColor;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: $primaryColor;
+            color: $white;
         }
     }
 }

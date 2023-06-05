@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const descriptionSchema = new mongoose.Schema({
     RAM: Number,
-    StorageSize: Number,
+    storageSize: Number,
     color: String,
-    Issues: String,
+    issues: String,
 })
 const itemSchema = new mongoose.Schema({
     name: {
