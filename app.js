@@ -35,6 +35,6 @@ app.listen(PORT, () => {
     mongoose.connect(connectionUrl)
         .then(() => { console.log("Connection to Mongo DB Secured"); })
         .catch((error) => {
-            console.log("Error");
+            console.log(error);
         })
 })
