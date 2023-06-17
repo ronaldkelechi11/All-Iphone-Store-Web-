@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const Item = require("../providers/item")
+const Item = require("../models/item")
 
 router.get("/additem", (req, res) => {
     console.log("Connected");

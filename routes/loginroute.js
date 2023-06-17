@@ -1,10 +1,10 @@
 const { json } = require('body-parser');
 const express = require('express');
 const router = express.Router();
-const User = require("../providers/user")
+const User = require("../models/user")
 
 router.get("/", (req, res) => {
-    res.sendFile(__dirname.replace("routes", "") + "/public/views/Login.html")
+    res.sendFile(__dirname.replace("routes", "") + "/public/screens/Login.html")
 })
 router.post("/", (req, res) => {
     var email = req.body.email
