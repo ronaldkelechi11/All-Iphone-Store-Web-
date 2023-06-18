@@ -1,20 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express()
 const PORT = 3030
+
+
 const connectionUrl = "mongodb://127.0.0.1:27017/alliphonestore"
 
 // Middleware
 app.use(express.static("."))
 app.use(express.urlencoded())
+//  Please change later to domain of front-end
+app.use(cors({
+    origin: "*"
+}))
 app.use(express.json())
 
 //Routes Fetching
 const homeroute = require("./routes/homeroute")
 const signuproute = require("./routes/signuproute")
-const productviewroute = require("./routes/productviewroute")
+const productviewroute = require("./routes/product")
 const loginroute = require('./routes/loginroute')
-const addItemRoute = require("./routes/additemroutes")
+const addItemRoute = require("./routes/admin")
 const allItemRoute = require("./routes/allitemroutes")
 
 
@@ -22,7 +29,7 @@ const allItemRoute = require("./routes/allitemroutes")
 app.use("/home", homeroute)
 app.use("/signup", signuproute)
 app.use("/login", loginroute)
-app.use("/productview", productviewroute)
+app.use("/product", productviewroute)
 app.use("/allitem", allItemRoute)
 app.use("/admin", addItemRoute)
 
