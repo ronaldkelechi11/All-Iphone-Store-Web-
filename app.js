@@ -26,10 +26,6 @@ app.use("/productview", productviewroute)
 app.use("/allitem", allItemRoute)
 app.use("/admin", addItemRoute)
 
-app.get("/", (req, res) => {
-    res.redirect("/home")
-})
-
 app.listen(PORT, () => {
     console.log("Server is online on " + PORT);
     mongoose.connect(connectionUrl)

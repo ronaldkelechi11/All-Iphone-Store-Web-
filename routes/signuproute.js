@@ -2,11 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require("../models/user")
 
-let data = ""
 
-router.get("/", (req, res) => {
-    res.sendFile(__dirname.replace("routes", "") + "/public/screens/SignUp.html")
-})
 router.post("/", (req, res) => {
     var name = req.body.name
     var email = req.body.email

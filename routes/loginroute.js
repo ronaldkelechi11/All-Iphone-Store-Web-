@@ -3,9 +3,6 @@ const express = require('express');
 const router = express.Router();
 const User = require("../models/user")
 
-router.get("/", (req, res) => {
-    res.sendFile(__dirname.replace("routes", "") + "/public/screens/Login.html")
-})
 router.post("/", (req, res) => {
     var email = req.body.email
     var password = req.body.password
