@@ -1,11 +1,4 @@
 function run() {
-    document.getElementById("goToSignup").addEventListener("click", () => {
-        window.location = "/signup"
-    })
-
-    document.getElementById("navbar").addEventListener("click", () => {
-        window.history.back()
-    })
 
     document.getElementById("form").addEventListener("submit", (e) => {
         e.preventDefault();

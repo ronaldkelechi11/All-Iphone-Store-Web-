@@ -25,6 +25,7 @@ const itemSchema = new mongoose.Schema({
     },
     description: descriptionSchema
 })
+// name, price, condition, image, description{ram, storageSize, color, issues}
 
 
 

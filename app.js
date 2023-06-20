@@ -19,18 +19,16 @@ app.use(express.json())
 //Routes Fetching
 const homeroute = require("./routes/homeroute")
 const signuproute = require("./routes/signuproute")
-const productviewroute = require("./routes/product")
 const loginroute = require('./routes/loginroute')
 const addItemRoute = require("./routes/admin")
-const allItemRoute = require("./routes/allitemroutes")
+const products = require("./routes/products")
 
 
 //Routes Assigning
 app.use("/home", homeroute)
 app.use("/signup", signuproute)
 app.use("/login", loginroute)
-app.use("/product", productviewroute)
-app.use("/allitem", allItemRoute)
+app.use("/products", products)
 app.use("/admin", addItemRoute)
 
 app.listen(PORT, () => {

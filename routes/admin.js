@@ -8,6 +8,6 @@ router.get("/additem", (req, res) => {
 })
 
 router.post("/", (req, res) => {
-
+    // Add new item
 })
 module.exports = router
