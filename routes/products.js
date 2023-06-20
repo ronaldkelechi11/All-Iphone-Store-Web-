@@ -9,6 +9,8 @@ router.get("/", (req, res) => {
 })
 
 router.get("/:product", (req, res) => {
-
+    var product = req.params.product
+    console.log(product);
+    res.sendFile(__dirname.replace("routes", "") + "/public/screens/productview.html")
 })
 module.exports = router
