@@ -7,13 +7,12 @@ router.post("/", (req, res) => {
     var email = req.body.email
     var password = req.body.password
 
-    if (email == 'admin' && password == 'adminpassword') {
+    if (email == 'admin@alliphonestore.com' && password == 'adminPassword') {
         res.status(300).send()
     }
     else {
         var user = User.findOne({ email, password })
             .then((response) => {
-                console.log(response);
                 if (response != null) {
                     res.status(200).send()
                 }

@@ -25,11 +25,11 @@ const products = require("./routes/products")
 
 
 //Routes Assigning
-app.use("/home", homeroute)
-app.use("/signup", signuproute)
-app.use("/login", loginroute)
-app.use("/products", products)
-app.use("/admin", addItemRoute)
+app.use("/home", homeroute) //for homepage
+app.use("/signup", signuproute) // for signup
+app.use("/login", loginroute) // for login
+app.use("/products", products) // for  products
+app.use("/admin", addItemRoute) //For admin 
 
 app.listen(PORT, () => {
     console.log("Server is online on " + PORT);
