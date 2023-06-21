@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const descriptionSchema = new mongoose.Schema({
+    _id: 0,
     RAM: Number,
     storageSize: Number,
     color: String,

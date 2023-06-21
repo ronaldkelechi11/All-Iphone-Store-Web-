@@ -20,7 +20,7 @@ app.use(express.json())
 const homeroute = require("./routes/homeroute")
 const signuproute = require("./routes/signuproute")
 const loginroute = require('./routes/loginroute')
-const addItemRoute = require("./routes/admin")
+const admin = require("./routes/admin")
 const products = require("./routes/products")
 
 
@@ -29,7 +29,7 @@ app.use("/home", homeroute) //for homepage
 app.use("/signup", signuproute) // for signup
 app.use("/login", loginroute) // for login
 app.use("/products", products) // for  products
-app.use("/admin", addItemRoute) //For admin 
+app.use("/admin", admin) //For admin 
 
 app.listen(PORT, () => {
     console.log("Server is online on " + PORT);
