@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const multer = require('multer');
 const app = express()
 const PORT = 3030
 
@@ -12,7 +11,7 @@ app.use(express.static("."))
 app.use(express.urlencoded())
 //  Please change later to domain of front-end
 app.use(cors({
-    origin: "*"
+    origin: "http://localhost:5173"
 }))
 app.use(express.json())
 
