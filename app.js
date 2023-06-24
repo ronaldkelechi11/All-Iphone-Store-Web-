@@ -9,11 +9,13 @@ const connectionUrl = "mongodb://127.0.0.1:27017/alliphonestore"
 // Middleware
 app.use(express.static("."))
 app.use(express.urlencoded())
+app.use(express.json())
+
 //  Please change later to domain of front-end
 app.use(cors({
     origin: "http://localhost:5173"
 }))
-app.use(express.json())
+
 
 //Routes Fetching
 const homeroute = require("./routes/homeroute")

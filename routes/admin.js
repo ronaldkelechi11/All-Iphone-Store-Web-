@@ -5,19 +5,24 @@ const multer = require('multer');
 const path = require('path');
 
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "../images");
-    },
     filename: (req, file, cb) => {
         console.log(file);
-        cb(console.log("error"), Date.now() + path.extname(file.originalName));
+        cb(null, Date.now() + file.originalname);
+    },
+    destination: (req, file, cb) => {
+        cb(null, "images");
     }
 })
 const upload = multer({ storage: storage })
 
 
-router.post("/addItem", (req, res) => {
+const cpUpload =
+    upload.fields([
+        { name: 'image1', maxCount: 1 },
+        { name: 'image2', maxCount: 1 },
+        { name: 'image3', maxCount: 1 }])
 
+router.post("/addItem", cpUpload, (req, res) => {
     var name = req.body.name
     var price = req.body.price
     var condition = req.body.condition
