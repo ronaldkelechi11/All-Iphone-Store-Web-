@@ -7,7 +7,7 @@ const PORT = 3030
 const connectionUrl = "mongodb://127.0.0.1:27017/alliphonestore"
 
 // Middleware
-app.use(express.static("."))
+app.use(express.static("images"))
 app.use(express.urlencoded())
 app.use(express.json())
 
